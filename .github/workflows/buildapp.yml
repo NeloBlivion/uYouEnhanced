@@ -23,7 +23,7 @@ on:
         type: string
       decrypted_youtube_url:
         description: "The direct URL to the decrypted YouTube ipa"
-        default: ""
+        default: "${{ vars.IPA_URL }}"
         required: true
         type: string
       bundle_id:
