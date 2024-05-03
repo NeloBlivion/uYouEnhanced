@@ -8,7 +8,7 @@ on:
     inputs:
       sdk_version:
         description: "iOS SDK version to be used during build"
-        default: "16.4"
+        default: "17.0"
         required: true
         type: string
       uyou_version:
@@ -23,7 +23,7 @@ on:
         type: string
       decrypted_youtube_url:
         description: "The direct URL to the decrypted YouTube ipa"
-        default: "${{ env.IPA_URL }}"
+        default: ${{ vars.IPA_URL }}
         required: true
         type: string
       bundle_id:
